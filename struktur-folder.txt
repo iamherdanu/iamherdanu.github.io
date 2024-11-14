@@ -1,0 +1,16 @@
+blog/
+├── index.html
+├── about.html
+├── blog/
+│   ├── posts/
+    |    ├── artikel-1.html
+│   └── blog.html      # layout menu grid
+├── css/
+│   ├── about.css      # style umum + dark mode
+│   ├── article.css      
+│   └── blog.css
+    └── navbar.css
+    └── style.css
+├── js/
+│   ├── blog.js   # untuk landing
+│   └── particles.js       # semua fungsi blog

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <title>SSH Key Github</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <div class="menu-items">
+                <li><a class="menu" href="/index.html">Home</a></li>
+            <li><a class="menu active" href="/blog/blog.html">Blog</a></li>
+            <button id="themeToggle" aria-label="Toggle theme">
+                🌙
+            </button>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article class="container">
+        <h1>
+            <span role="img" aria-label="thinking face">&#128583;</span>
+            Apa itu SSH Key Github?
+        </h1>
+
+        <section class="introduction">
+            <p>
+                SSH (Secure Shell) adalah protokol yang memungkinkan user terhubung dan mengotentikasi ke remote server dan layanan secara aman. Dalam 
+                konteks GitHub, SSH digunakan untuk menghubungkan komputer lokal 
+                dengan akun GitHub tanpa perlu memasukkan username dan password 
+                setiap kali melakukan operasi Git.
+            </p>
+        </section>
+
+        <section class="dialogue">
+            <div class="dialogue-right">
+                <p class="dialogue-text">
+                    <span role="img" aria-label="student">&#128583;</span>
+                    Bagaimana cara kerjaya?
+                    
+                </p>
+            </div>
+
+            <div class="dialogue-left">
+                <p class="dialogue-text">
+                    <span role="img" aria-label="walter white">&#128590;</span>
+                    Bayangkan seperti sistem kunci dan gembok:
+                    <li>Kunci privat disimpan di komputer kita</li>
+                    <li>Kunci publik diberikan ke Github sebagai gembok</li>
+                </p>
+            </div>
+    <div class="dialogue-right">
+        <p class="dialogue-text">
+            <span role="img" aria-label="student">&#128583;</span>
+            Lalu, apa bedanya dengan login biasa?
+            
+        </p>
+    </div>
+
+    <div class="dialogue-left">
+         <strong>Proses Otentikasi</strong>
+        <p>Ketika ingin terhubung ke GitHub, komputer akan mengirim pesan yang "dikunci" dengan kunci privat.
+            GitHub menerima pesan ini dan mencoba "membukanya" dengan kunci publik yang tersimpan di sana.
+            Jika berhasil dibuka, GitHub tahu itu benar-benar dan mengizinkan koneksi.</p>
+            <strong>Keamanan</strong>
+            <p> 
+                Karena hanya kita yang memiliki kunci privat, hanya kita yang bisa membuat pesan yang bisa "dibuka" oleh kunci publik di GitHub.
+                Ini seperti hanya pemilik kunci yang bisa membuka gembok di pintu GitHub.     dengan SSH tidak perlu login akun secara manual, (email, password, konfigurasi kode melalui email), kita hanya perlu memasukan kode melalui git log, ini sangat memudahkan jika bekerja dengan komputer yang berbeda.
+
+                Lebih aman daripada password, karena kunci privat tidak pernah dikirim melalui internet.
+                Lebih nyaman, karena tidak perlu mengetik password.</p>
+                <strong>Penggunaan:</strong>
+                <p>Setiap kali melakukan operasi Git (seperti push atau pull), sistem ini bekerja di latar belakang.
+                    kita tidak perlu memasukkan password setiap kali, karena "kunci" yang melakukan otentikasi.</p>
+    </div>
+
+    <div class="dialogue-left">
+        <p class="dialogue-text">
+            <span role="img" aria-label="student">&#128583;</span>
+                Bagaimana jika kita mengganti Sistem Operasi, apakah password akan hilang?
+            
+        </p>
+    </div>
+
+    <div class="dialogue-left">
+        <p class="dialogue-text">
+            <span role="img" aria-label="walter white">&#128590;</span>
+            Tidak, Password akun GitHub disimpan di server GitHub, bukan di komputer.
+
+Jika mengganti sistem operasi, kunci SSH (baik privat maupun publik) tersimpan di komputer.dan jika kita menginstal sistem operasi baru, 
+kunci SSH ini akan hilang karena tersimpan di hard drive yang di-format. 
+Password akun GitHub tetap aman dan tidak terpengaruh.
+kita masih bisa login ke akun GitHub menggunakan username dan password seperti biasa. 
+dan tidak bisa lagi menggunakan koneksi SSH dari komputer tersebut ke GitHub.
+        </p>
+    </div>
+    <div class="dialogue-left">
+        <p class="dialogue-text">
+            <span role="img" aria-label="walter white">&#128590;</span>
+            Jadi jangan install2 terus lah kalau tidak terlalu urgen wkwkwkwkw        
+        </p>
+    </div>
+
+    <strong>Apa yang perlu dilakukan?</strong>
+    <li>membuat kunci SSH baru di sistem operasi yang baru.</li>
+    <li>Tambahkan kunci publik baru ini ke akun GitHub.</li>
+    <li>Hapus kunci SSH lama dari pengaturan GitHub (karena sudah tidak bisa digunakan).</li>
+
+    <div class="dialogue-left">
+        
+        <p class="dialogue-text">
+            <span role="img" aria-label="student">&#128583;</span>
+            <strong>Kesimpulannya?</strong>                
+        </p>
+        <p>SSH Key adalah cara aman dan efisien untuk terhubung ke GitHub. Sekali setup, kerja jadi lebih mudah. Yang penting jaga kunci privat dan lakukan manajemen yang baik. Jangan pernah membagikan kunci privat</p>
+    </div>
+        </section>
+    </article>
+</main>
+
+<div class="container">
+    <p>Lainnya:</p>
+    <li><a href="/blog/posts/artikel-1.html">Memulai projek dengan Github</a></li>
+    
+    <li><a href="/blog/posts/artikel-1.html">CSS flexbox, Grid</a> </li>
+    
+</div>
+
+<div class="container">
+    <p>Reference</p>
+<a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh?_x_tr_hist=true">https://docs.github.com/en/authentication/connecting-to-github-with-ssh?_x_tr_hist=true</a>
+</div>
+
+
+
+
+    <script src="/js/blog.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gradient-bg: linear-gradient(135deg, #E8D8E8, #D8E3E8);
+    --text-color: #1a1a1a;
+    --shadow-color: rgba(0, 0, 0, 0.35);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--gradient-bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: clamp(1rem, 5vw, 2rem);
+    max-width: min(1200px, 90vw);
+    margin: 0 auto;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.left-column {
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, #2C3E50, #3498DB, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #34495E, #2980B9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.buttons a {
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 2.1rem);
+    max-width: 65ch;
+    line-height: 1.6;
+    opacity: 0.85;
+    color: #2C3E50;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn {
+    padding: clamp(1rem, 3vw, 1.875rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--gradient-bg);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border: 1px solid transparent;
+    width: 200px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn:hover, .btn:focus {
+    transform: translateY(5px);
+    box-shadow: inset 0 8px 20px var(--shadow-color);
+    outline: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.heart {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .heart {
+        animation: none;
+    }
+    .btn {
+        transition: none;
+    }
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        margin-top: clamp(1rem, 5vh, 2rem);
+        align-items: center;
+    }
+
+    .btn {
+        padding: clamp(1rem, 3vw, 1.875rem);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: min(200px, 100%);
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+    }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+:root {
+    --bg-color: linear-gradient(135deg, #E8D8E8, #D8E3E8);
+    --text-color: #333333;
+    --spacing-lg: 30px;
+    --spacing-md: 20px;
+    --container-width: 69%;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3 ease; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', serif;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    margin: var(--spacing-lg) auto;
+    width: var(--container-width);
+    padding: var(--spacing-lg);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: justify;
+}
+
+.dialogue-text {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    font-size: 19px;
+}
+
+.dialogue-text span {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.dialogue-left {
+    margin-right: var(--spacing-md);
+}
+
+.dialogue-right {
+    margin-left: var(--spacing-md);
+}
+
+p {
+    font-size: 19px;
+    text-align: justify;
+    margin-bottom: var(--spacing-md);
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', serif;
+    margin-bottom: var(--spacing-md);
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --container-width: 90%;
+    }
+
+    .dialogue-left, .dialogue-right {
+        margin: 0;
+    }
+}
+ 
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="menu-items">
+                    <li><a class="menu" href="../index.html">Home</a></li>
+                    <li><a class="menu active" href="#">Blog</a></li>
+                    <li>            
+                        <button id="themeToggle" aria-label="Toggle theme">
+                        🌙
+                    </button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+        <div class="tags-filter">
+            <button class="tag active" data-tag="all">Semua</button>
+            <button class="tag active" data-tag="all">JavaScript</button>
+            <button class="tag active" data-tag="all">HTML</button>
+            <button class="tag active" data-tag="all">CSS</button>
+            <button class="tag active" data-tag="all">Github</button>
+            <button class="tag active" data-tag="all">Linux</button>
+        </div>
+
+        <div class="posts-grid">
+            <article class="posts-card" data-tags="javascript,web">
+                <div class="post-image">
+                    <!-- bg atau placeholder -->
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Web</span>
+                        <h2><a href="/blog/posts/artikel-1.html">CSS Animated</a></h2>
+                        <p class="post-excerpt">Lorem ipsum dolor sit amet.</p>
+                        <time>5 Nov 2024</time>
+                    </div>
+                </div>
+            </article>
+            <!-- artikel lain -->
+            <article class="posts-card" data-tags="javascript,web">
+                <div class="post-image">
+                    <!-- bg atau placeholder -->
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Web</span>
+                        <h2><a href="/blog/posts/artikel-1.html">Flex dan Grid CSS</a></h2>
+                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, officiis.</p>
+                        <time>7 Nov 2024</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="posts-card" data-tags="javascript,web">
+                <div class="post-image">
+                    <!-- bg atau placeholder -->
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web</span>
+                        <h2><a href="/blog/posts/artikel-1.html">JS Asyncronous</a></h2>
+                        <p class="post-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo!</p>
+                        <time>8 Nov 2024</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="posts-card" data-tags="javascript,web">
+                <div class="post-image">
+                    <!-- bg atau placeholder -->
+                </div>
+                <div class="post-content">
+                    <div class="post-tags">
+                        <span class="tag">Github</span>
+                        <span class="tag">Web</span>
+                        <h2><a href="/blog/posts/artikel-1.html">SSH Key Github</a></h2>
+                        <p class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!</p>
+                        <time>9 Nov 2024</time>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </div>
+    </main>
+
+    <button id="scrollTop" title="Go to top"></button>
+
+    <footer>
+        <p>&copy; 2024 Danu</p>
+    </footer>
+    <script src="../js/blog.js"></script>
+</body>
+</html>
