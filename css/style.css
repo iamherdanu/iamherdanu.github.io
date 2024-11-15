@@ -122,6 +122,8 @@ footer {
     animation: heartbeat 1.5s infinite;
 }
 
+/* responsive */
+
 @keyframes heartbeat {
     0% {transform: scale(1);}
     50% {transform: scale(1.2);}
@@ -136,8 +138,6 @@ footer {
         transition: none;
     }
 }
-
-/* responsive */
 
 @media (max-width: 768px) {
     .container {
