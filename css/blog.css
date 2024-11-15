@@ -116,3 +116,24 @@ footer {
 }
 
 /* responsive */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tags-filter {
+        gap: 0.625rem;
+        flex-wrap: wrap;
+    }
+
+    .posts-content {
+        width: 50%;
+    }
+
+    footer {
+        position: initial;
+    }
+}
+
