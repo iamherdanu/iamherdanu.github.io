@@ -83,6 +83,17 @@ h2 a {
     font-size: 0.8rem;
 }
 
+.tags-filter .tag {
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(white, white), 
+        linear-gradient(to right, #ff2a00, blue);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+
 #scrollTop {
     position: fixed;
     bottom: 20px;
