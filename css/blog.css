@@ -83,6 +83,11 @@ h2 a {
     font-size: 0.8rem;
 }
 
+/* .tags-filter .tag {
+    border-image: linear-gradient(to right, #ff2a00 0%, blue 100%) 1;
+    border-radius: 15px;
+} */
+
 #scrollTop {
     position: fixed;
     bottom: 20px;
