@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memulai Project di Github</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="menu-items">
+                    <li><a class="menu" href="/index.html">Home</a></li>
+                <li><a class="menu active" href="/blog/blog.html">Blog</a></li>
+                <button id="themeToggle" aria-label="Toggle theme">
+                    🌙
+                </button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="container">
+            <h1>
+                Memulai Project di Github
+            </h1>
+            <section class="introduction">
+                <p>
+                    Saat pertama menginisiasi .git, branch utama akan berada di main. 
+                    Tapi gak seru dong kalo kita cuma main-main di branch main wkwkkw. 
+                    Jadi setiap commit atau perubahan final pastikan push dan commit di branch main, 
+                    oleh sebab itu pentingnya berada di branch yang benar saat melakukan commit.
+                    
+                    Sebelum memulai upload project di github, struktur dan konfigurasi harus rapi,
+                    sehingga memudahkan dalam memahami apa yang terjadi jika memulai pekerjaan tertentu
+                    dengan git. 
+                    
+                    <strong>konfigurasi global username</strong>
+                    git config --global user.name "yourname"
+                    git config --global user.email name@mail.com
+
+                    melihat konfigurasi:
+
+                    git config --list
+
+
+                <strong>Autentikasi</strong>
+                Saat push dll github tidak bisa lagi menggunakan password, oleh sebab itu
+                beberapa cara untuk autentikasi bisa dengan:
+                - SSH Key
+                - Personal Access Token
+            
+                
+                </p>
+            </section>
+    
+            <script src="/js/blog.js"></script>
+</body>
+</html>
