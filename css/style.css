@@ -153,6 +153,9 @@ footer {
         margin-top: clamp(1rem, 5vh, 2rem);
         align-items: center;
     }
+    a.btn {
+        padding: 15px 27px;
+    }
 
     .btn {
         padding: clamp(1rem, 3vw, 1.875rem);
